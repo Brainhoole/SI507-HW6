@@ -100,7 +100,9 @@ The code is added in .html file.
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
 CHANGE document.querySelector('h1').innerHTML = "A name";
+
 TO document.querySelector('h1').innerHTML = "Yiran Wang";
+
 This function would locate the h1 tage and replace what's inside with Yiran Wang.
 
 * **What does the word `document` represent in this code? Explain briefly.**
@@ -184,7 +186,9 @@ This style region defines whenever there is a class called error, the element is
 It is a pattern expressed by regular expression, which means strings can only be composed of alphabats no matter uppercase or lowercase.
 
 ^:Matches beginning of input.
+
 $:Matches end of input.
+
 +:Matches the preceding expression 1 or more times.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
