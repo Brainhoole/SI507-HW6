@@ -56,14 +56,8 @@ Below are a bunch of questions and indications of things to do. For each indicat
 	* Slightly more than half the 1000 points will come from answering the questions. The rest will come from your edits to the code.
 
 ### Names of people you have worked with on this assignment
-* List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this:
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Yiran Wang (stepyi)**
+* Tsung-Chi Chang (tsungcch)
 
 ## Questions & code instructions
 
@@ -78,8 +72,11 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-
+```js
 // A code comment looks like this.
+```
+
+A line starting with // is a code comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
@@ -87,21 +84,24 @@ Include your .js file into an .htm(l) page via the <script> tag, then open the p
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-document.write():For testing purposes, it is convenient to use document.write()
+document.write(): write the message into HTML output (for testing purposes)
 
-window.alert():You can use an alert box to display data
+window.alert(): use an alert box to display data
 
-console.log():For debugging purposes, you can use the console.log() method to display data.
+console.log(): display the message in the console (for debugging purposes)
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+```js
 //alert("hello");
+```
 The code is added in .html file.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
 CHANGE document.querySelector('h1').innerHTML = "A name";
 TO document.querySelector('h1').innerHTML = "Yiran Wang";
+This function would locate the h1 tage and replace what's inside with Yiran Wang.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
@@ -126,7 +126,7 @@ Because of the code:
 background-color: #b3b3b3;
 border: 3px solid #FFFFFF;
 ```
-We can change the HTML color code to change the color.
+We can change the HTML color code to change the color of the border.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
@@ -140,6 +140,8 @@ Then add it in 'item':
 ```js
   <li oncopy="copyFunction_new()">McGill University</li>
 ```
+That copyFunction_new() would be triggered when there is a copy operation on McGill University. This is how it works when doing copy on University of Michigan.
+
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
 ```js
@@ -153,10 +155,9 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+The last statement means there is a button called Wow and when users click on the button, handleClick() is going to be triggered and execute what's inside the function.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
-
 
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
@@ -176,10 +177,12 @@ Because of the following code:
     }
 </style>
 ```
+This style region defines whenever there is a class called error, the element is going to be applied on color red; on the other hand, the element is blue if it belongs to class good.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
-The string can only be composed of letters.
+It is a pattern expressed by regular expression, which means strings can only be composed of alphabats no matter uppercase or lowercase.
+
 ^:Matches beginning of input.
 $:Matches end of input.
 +:Matches the preceding expression 1 or more times.
